@@ -1,0 +1,48 @@
+@use '../mixins/gradient' as *;
+.btn-primary{
+    background-color: $primary;
+    border: none;
+    border-radius: 28px;
+    width: 167px;
+    height: 56px;        
+    p{
+        color: $white;
+        line-height: normal;
+    }
+    &.btn-primary:hover{
+        background-color: $secondary;
+    }
+}
+
+.btn-secondary{
+    @include primary-gradient;
+    border: none;
+    width: 167px;
+    height: 63px;
+    border-radius: 32px;
+    p{
+        color: $white;
+        line-height: normal;
+    }
+    &.btn-secondary:hover{
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    }
+}
+
+.btn-secondary1{
+    background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);;
+    border: none;
+    width: 167px;
+    height: 63px;
+    border-radius: 32px;
+    p{
+        color: $white;
+        line-height: normal;
+    }
+    &.btn-secondary1:hover{
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+
+
+
+    }
+}

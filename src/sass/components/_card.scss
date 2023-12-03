@@ -1,0 +1,33 @@
+@use '../mixins/gradient' as *;
+.price{
+    padding-top: 50px;
+}
+
+.card{
+width: 350px;
+height: 322px;
+border-radius: 15px;
+text-align: left;
+.card-body{
+    padding: 38px;  
+    .card-bg{
+        @include primary-gradient;
+        
+    }  
+    button {
+        border: none;
+        background: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-image: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+        font-size: 24px;
+        &:hover{
+            color: $light-pink;
+        }
+      }
+}
+}
+.card-bg{
+    @include primary-gradient;
+}

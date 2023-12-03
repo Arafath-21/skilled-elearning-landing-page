@@ -1,0 +1,21 @@
+.hero-content{
+    .heading{
+        padding-top: 120px;
+    }
+    .hero-para{
+        padding: 40px 0;
+    }
+}
+.hero-image{
+    .img{
+        width: 100%;
+        top: 0;
+        right:0;
+        transform: translate(80%,-22%);
+        z-index: 2;
+    }
+}
+
+body{
+    overflow-x: hidden;
+}

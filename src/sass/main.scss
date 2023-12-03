@@ -1,0 +1,19 @@
+// Import variables
+@import './variables/colors';
+@import './variables/fonts';
+
+// Import base styles
+@import './base/reset';
+@import './base/typography';
+@import './base/utilities';
+
+// Import components
+@import './components/buttons';
+@import './components/card';
+// // Import layout
+@import './layout/content';
+@import './layout/footer';
+
+
+// // Import mixins
+@import './mixins/gradient';
